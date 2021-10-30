@@ -1,0 +1,14 @@
+geoopt==0.3.1
+matplotlib==3.3.4
+networkit==7.0
+networkx==2.5
+numpy==1.20.2
+scikit-learn==0.24.1
+scipy==1.6.1
+sklearn==0.0
+torch==1.6.0+cu101
+torch-cluster==1.5.9
+torch-geometric==1.6.3
+torch-scatter==2.0.6
+torch-sparse==0.6.9
+torch-spline-conv==1.2.1
