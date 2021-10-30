@@ -24,6 +24,10 @@ Note:
 - The dataset with name ``dblp`` is the COLAB dataset in the paper. 
 - [Link: to download more datasets](https://drive.google.com/file/d/11aC6N_4ewuR7j87EZC_SExkSv0K81seM/view?usp=sharing)
 ## 3. Examples
+3.0 Go to the script at first
+
+```cd ./script```
+
 3.1 To quickly run the code:
 
 ```python main.py --model=HTGN --dataset=enron10```
