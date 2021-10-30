@@ -45,6 +45,7 @@ Note: for a unified comparison, we use inner product as decoder for the baseline
 
 ## 4. Some of the code was forked from the following repositories
 - [HGCN](https://github.com/HazyResearch/hgcn)
+- [HyperRNN](https://github.com/ferrine/hyrnn)
 - [EvolveGCN](https://github.com/IBM/EvolveGCN)
 - [DySAT](https://github.com/aravindsankar28/DySAT)
 - [VGRNN](https://github.com/VGraphRNN/VGRNN)
