@@ -17,7 +17,7 @@ Code: https://github.com/marlin-codes/HTGN-KDD2021
 
 ### 2.2 Datasets
 
-The data is cached in `./data/cached`.
+The data is cached in `./data/input/cached`.
 The raw datasets are in the folder `./data/input/raw`
 
 Note: 
