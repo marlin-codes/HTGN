@@ -14,10 +14,10 @@ class HTGN(BaseModel):
         self.manifold_name = args.manifold
         self.manifold = PoincareBall()
 
-        self.c = Parameter(torch.ones(3, 1) * args.curvature, requires_grad=not args.fixed_curvature).to(args.device)
-        self.feat = Parameter((torch.ones(args.num_nodes, args.nfeat)).to(args.device), requires_grad=True)
+        self.c = Parameter(torch.ones(3, 1) * args.curvature, requires_grad=not args.fixed_curvature)
+        self.feat = Parameter((torch.ones(args.num_nodes, args.nfeat)), requires_grad=True)
         self.linear = nn.Linear(args.nfeat, args.nout)
-        self.hidden_initial = torch.ones(args.num_nodes, args.nout).to(args.device)
+        self.hidden_initial = torch.ones(args.num_nodes, args.nout)
         self.use_hta = args.use_hta
         if args.aggregation == 'deg':
             self.layer1 = HGCNConv(self.manifold, 2 * args.nout, 2 * args.nhid, self.c[0], self.c[1],
@@ -57,7 +57,7 @@ class HTGN(BaseModel):
         e_reshaped = torch.reshape(e, (self.num_window, -1))
         a = F.softmax(e_reshaped, dim=0).unsqueeze(2)
         hidden_window_new = torch.reshape(hidden_window, [self.num_window, -1, self.nout])
-        s = torch.mean(a * hidden_window_new, dim=0)
+        s = torch.mean(a * hidden_window_new, dim=0) # torch.sum is also applicable
         return s
 
     def initHyperX(self, x, c=1.0):
