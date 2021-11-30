@@ -17,7 +17,7 @@ class HTGN(BaseModel):
         self.c = Parameter(torch.ones(3, 1) * args.curvature, requires_grad=not args.fixed_curvature)
         self.feat = Parameter((torch.ones(args.num_nodes, args.nfeat)), requires_grad=True)
         self.linear = nn.Linear(args.nfeat, args.nout)
-        self.hidden_initial = torch.ones(args.num_nodes, args.nout)
+        self.hidden_initial = torch.ones(args.num_nodes, args.nout).to(args.device)
         self.use_hta = args.use_hta
         if args.aggregation == 'deg':
             self.layer1 = HGCNConv(self.manifold, 2 * args.nout, 2 * args.nhid, self.c[0], self.c[1],
