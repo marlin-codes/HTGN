@@ -46,7 +46,7 @@ parser.add_argument('--dropout', type=float, default=0.0, help='dropout rate (1 
 parser.add_argument('--heads', type=int, default=1, help='attention heads.')
 parser.add_argument('--egcn_type', type=str, default='EGCNH', help='Type of EGCN: EGCNH or EGCNO')
 parser.add_argument('--curvature', type=float, default=1.0, help='curvature value')
-parser.add_argument('--fixed_curvature', type=int, default=0, help='fixed (1) curvature or not (0)')
+parser.add_argument('--fixed_curvature', type=int, default=1, help='fixed (1) curvature or not (0)')
 parser.add_argument('--aggregation', type=str, default='deg', help='aggregation method: [deg, att]')
 
 args = parser.parse_args()
