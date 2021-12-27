@@ -6,7 +6,7 @@ Authors: Menglin Yang; Min Zhou; Marcus Kalander; Zengfeng Huang; Irwin King
 
 Paper: https://arxiv.org/pdf/2107.03767.pdf
 
-Code: https://github.com/marlin-codes/HTGN-KDD2021
+Code: https://github.com/marlin-codes/HTGN
 
 ![Framework of HTGN](figures/HTGN-framework.png)
 
