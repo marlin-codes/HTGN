@@ -22,7 +22,7 @@ The raw datasets are in the folder `./data/input/raw`
 
 Note: 
 - The dataset with name ``dblp`` is the COLAB dataset in the paper. 
-- [Link: to download more datasets](https://drive.google.com/file/d/1J_cz_efVhdGBYAXEPBF_RsVrTusQJJ0o/view?usp=sharing)
+- [Link: to download more datasets](https://drive.google.com/file/d/1qv98H-mI2BtdNGexlTIm127xslHslxS1/view?usp=sharing)
 ## 3. Examples
 3.0 Go to the script at first
 
